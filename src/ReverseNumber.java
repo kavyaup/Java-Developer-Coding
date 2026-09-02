@@ -1,17 +1,21 @@
+import java.util.Scanner;
+
 public class ReverseNumber {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
 
-        int number = 12345;
         int reverse = 0;
 
-        while (number != 0) {
+        while(num!=0){
+            int rem = num % 10;
 
-            int digit = number % 10;
-            reverse = reverse * 10 + digit;
-            number = number / 10;
+            reverse = (reverse * 10) + rem ;
+
+            num = num/10;
         }
-
-        System.out.println("Reversed number: " + reverse);
+        System.out.println(reverse);
     }
 }
