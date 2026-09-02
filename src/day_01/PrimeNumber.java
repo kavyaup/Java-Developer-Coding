@@ -1,3 +1,5 @@
+package day_01;
+
 import java.util.Scanner;
 
 public class PrimeNumber {

@@ -1,3 +1,5 @@
+package day_02;
+
 import java.util.Scanner;
 
 public class FibonacciSeries {
